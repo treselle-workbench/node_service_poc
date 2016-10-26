@@ -5,7 +5,7 @@ const Hapi = require('hapi');
 //const server = new Hapi.Server();
 const server = new Hapi.Server({ debug: { request: ['error'] } });
 
-server.connection({ host: '54.146.4.238', port: 3001 });
+server.connection({ host: '0.0.0.0', port: 3001 });
 
 server.route({
     method: 'GET',
