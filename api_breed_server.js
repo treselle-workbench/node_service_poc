@@ -19,7 +19,7 @@ server.route({
     method: 'GET',
     path: '/breeddetails',
     handler: function (request, reply) {
-      var responseData = {'response' : ['breed1', 'breed2', 'breed3', 'breed4', 'breed5']};
+      var responseData = {'response' : ['Breed 1', 'Breed 2', 'Breed 3', 'Breed 4', 'Breed 5']};
         reply(responseData);
     }
 });
