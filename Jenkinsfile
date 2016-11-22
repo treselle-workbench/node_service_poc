@@ -1,10 +1,6 @@
 node {
 	stage 'Git Checkout'
 		git url: 'https://github.com/treselle-workbench/node_service_poc.git'
-	stage 'Container cleanup'
-		sh "sudo docker stop node_service"
-		sh "sudo docker rm node_service"
-		sh "sudo docker rmi node_service"
 	stage 'Build Docker Image'
 		sh "sudo docker build -t node_service ."
 	stage 'Run Docker Container'
